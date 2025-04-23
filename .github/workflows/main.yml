@@ -6,5 +6,7 @@ jobs:
   first-job:
     runs-on: self-hosted
     steps:
+    - name: pull code from github to server
+      uses: actions/checkout@v4
     - name: check pwd
       run: pwd
