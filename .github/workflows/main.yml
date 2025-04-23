@@ -1,0 +1,10 @@
+name: CI for simple website
+on: 
+  push:
+    branches: ["main"]
+jobs:
+  first-job:
+    runs-on: self-hosted
+    steps:
+    - name: check pwd
+      run: pwd
